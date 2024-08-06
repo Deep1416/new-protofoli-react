@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import "./HeroSection.css";
 // import ProfileImage from "./../../assets/Img/Untitled-3.png";
-// import Pdf from "./../../assets/pdf/DHIRAJBHAWSAR(resume).pdf";
+import Pdf from "./../../assets/pdf/Deependra6_8_2024.pdf";
 
 const HeroSection = () => {
   const texts = useMemo(
@@ -49,7 +49,7 @@ const HeroSection = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = Pdf;
-    link.setAttribute("download", "DhirajBhawsarResume.pdf");
+    link.setAttribute("download", "Deependra6_8_2024.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

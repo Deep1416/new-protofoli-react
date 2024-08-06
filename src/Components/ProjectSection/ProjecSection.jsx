@@ -8,6 +8,9 @@ import react from "../../assets/Img/reactBasic.png";
 import tailwind from "../../assets/Img/Tailwind.png";
 import js from "../../assets/Img/JavaScript.png";
 import firebase from "./../../assets/Img/firebase1.png";
+import mongodb from "/img/pngwing.com (2).png";
+import Express from "/img/pngwing.com1.png";
+import node from "/img/pngwing.com (1).png";
 import shopper from "/img/e-commerece.png";
 import codePen from "/img/codepen.png";
 import meal from "/img/meal.png";
@@ -16,8 +19,18 @@ import emojee from "/img/emojee.png";
 import drum from "/img/drum.png";
 import bharat from "/img/bharatPe.png";
 import grocery from "/img/grocery.png";
+import jobPost from "/img/Screenshot (738).png";
 const ProjectSection = () => {
   const projects = [
+    {
+      title: "Job Post",
+      description:
+        "JobPost is a comprehensive job listing and recruitment platform designed to streamline the hiring process for employers and job seekers alike. The platform offers a seamless and intuitive user experience, allowing companies to post job openings and manage applications, while providing job seekers with advanced search and filtering options to find their ideal positions.",
+      link: "https://github.com/Deep1416/job-Post-Ui",
+      image: jobPost,
+      goLive: "https://job-post-ui-five.vercel.app/",
+      tech: [react, tailwind,node,Express,mongodb],
+    },
     {
       title: "Grocery",
       description:

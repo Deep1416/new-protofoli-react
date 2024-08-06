@@ -9,10 +9,13 @@ import Javascript from "./../../assets/Img/JavaScript.png";
 import ReactImg from "./../../assets/Img/React.png";
 import Git from "./../../assets/Img/git.png";
 import Github from "./../../assets/Img/Github.png";
-import node from "/img/pngwing.com.png";
-import Express from "/img/express.png";
+import mongodb from "/img/pngwing.com (2).png";
+import Express from "/img/pngwing.com1.png";
+import node from "/img/pngwing.com (1).png";
+import figma from "/img/pngwing.com (4).png";
 
 const skills = [
+  { name: "Figma", image: figma },
   { name: "Java", image: JavaImg },
   { name: "Html", image: Html },
   { name: "Css", image: Css },
@@ -22,8 +25,9 @@ const skills = [
   { name: "React.js", image: ReactImg },
   { name: "Git", image: Git },
   { name: "GitHub", image: Github },
-  { name: "Express", image:  Express  },
   { name: "Node", image: node },
+  { name: "Express", image:  Express  },
+  { name: "MongoDB", image: mongodb },
 ];
 
 const hoverStyles = `
