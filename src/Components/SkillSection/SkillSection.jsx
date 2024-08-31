@@ -149,7 +149,7 @@ const SkillSection = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="p-5 md:p-3 rounded-lg drop-shadow-xl cursor-pointer neon-hover flex gap-5 justify-around items-center transition-all  duration-500 bg-[#f7d333]"
+              className="p-5 md:p-3 rounded-lg drop-shadow-xl cursor-pointer hover:bg-transparent hover:border hover:border-white flex gap-5 justify-around items-center transition-all  duration-500 bg-[#ab48b7] "
               ref={(el) => (skillItemsRef.current[index] = el)}
             //   style={{ backgroundColor: getRandomColor() }}
             >

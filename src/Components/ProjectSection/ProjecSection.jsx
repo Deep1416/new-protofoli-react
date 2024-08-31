@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { GitHub, AttachFile } from "@mui/icons-material";
+import { FaGithub } from "react-icons/fa";
+import { IoLinkSharp } from "react-icons/io5";
 import "./ProjectSection.css";
 // tech icons
 import html from "./../../assets/Img/Html.png";
@@ -29,7 +31,7 @@ const ProjectSection = () => {
       link: "https://github.com/Deep1416/job-Post-Ui",
       image: jobPost,
       goLive: "https://job-post-ui-five.vercel.app/",
-      tech: [react, tailwind,node,Express,mongodb],
+      tech: [react, tailwind, node, Express, mongodb],
     },
     {
       title: "Grocery",
@@ -123,7 +125,7 @@ const ProjectSection = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="relative m-3 cursor-pointer flex flex-col text-gray-700 bg-black shadow-md bg-clip-border rounded-xl w-96 project-card"
+            className="relative m-3 cursor-pointer flex flex-col  text-gray-700 bg-black shadow-md bg-clip-border rounded-xl w-96 project-card"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -183,10 +185,37 @@ const ProjectSection = () => {
                   ))}
                 </div>
               </div>
-              <div className="flex items-start">
-                <p className="block font-sans text-base text-gray-300 leading-relaxed text-left">
+              <div className="flex items-start h-[250px]">
+                <p className="block font-sans text-[17px] text-[#c0c0c0] leading-relaxed text-justify">
                   {project.description}
                 </p>
+              </div>
+            </div>
+            <div className="flex text-white items-center h-20 justify-center gap-6  ">
+              <div className="w-[40%] border border-white py-2 rounded-md  bg-blue-400 ">
+                <a
+                  href={project.link}
+                  className="flex items-center gap-2 justify-center"
+                >
+                  <div className="text-white text-2xl">
+                    {" "}
+                    <FaGithub />
+                  </div>
+                  <div>Github</div>
+                </a>
+              </div>
+
+              <div className="w-[40%] border border-white py-2 rounded-md">
+              <a
+                  href={project.goLive}
+                  className="flex items-center gap-2 justify-center"
+                >
+                  <div className="text-white text-2xl">
+                    {" "}
+                    <IoLinkSharp />
+                  </div>
+                  <div>Live</div>
+                </a>
               </div>
             </div>
           </motion.div>
